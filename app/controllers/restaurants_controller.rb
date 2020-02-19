@@ -16,8 +16,7 @@ class RestaurantsController < ApplicationController
     if @restaurant.save # => false / true
       redirect_to @restaurant, notice: 'Restaurant was successfully created.'
     else
-    # redirect_to new_restaurant_path WRONG!
-        render :new # please render new.html.erb!
+      render :new # please render new.html.erb!
     end
   end
 
